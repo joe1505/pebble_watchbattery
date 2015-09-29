@@ -1,0 +1,23 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "sensicomm.com",
+    "longName": "watch with battery history",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "watchbattery",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "4da6dbe5-0aaf-4281-a4d0-075772dce6ad",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
