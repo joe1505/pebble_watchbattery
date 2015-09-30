@@ -117,7 +117,12 @@ static void main_window_load(Window *window) {
 	text_layer_set_text_alignment(s_time_layer, GTextAlignmentRight);
 
 	// Seconds block (at bottom right).
+	// The ifdef is a hack to work around the broken40 problem.
+#ifdef PBL_PLATFORM_BASALT	
+	s_seconds_layer = text_layer_create(GRect(bounds.size.w-49, bounds.size.h-32, 46, 32));
+#else
 	s_seconds_layer = text_layer_create(GRect(bounds.size.w-48, bounds.size.h-32, 46, 32));
+#endif
 	text_layer_set_text_color(s_seconds_layer, FRONT_COLOR);
 	text_layer_set_background_color(s_seconds_layer, GColorClear);
 
